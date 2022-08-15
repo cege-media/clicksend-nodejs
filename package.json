@@ -4,7 +4,8 @@
   "description": "This is the official [ClickSend](https://clicksend.com) SDK. Documentation can be found [here](https://developers.clicksend.com/docs/rest/v3/?nodejs#introduction).",
   "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --target es5 ./api.ts"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "homepage": "https://github.com/ClickSend/clicksend-nodejs#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.3",
+    "bluebird": "^3.7.2",
+    "http": "^0.0.1-security",
+    "request": "^2.88.2",
+    "typescript": "^4.7.4"
   }
 }
